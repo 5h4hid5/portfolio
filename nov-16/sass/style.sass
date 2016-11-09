@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700')
+
+/*-- Variables --*/
+
+$tx_c: #689F38
+$bg_c: #DCEDC8
+$wh_c: #ffffff
+$hv_c: #CDDC39
+$bgl_c: #C5E1A5
+
+/*-- Common_Styles --*/
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+* a
+  text-decoration: none
+  transition: all 0.3s ease-in-out
+
+  & :hover, & :visited, & :active
+    text-decoration: none
+    color: $hv_c !important
+
+.flex
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-content: center
+
+body
+  font-family: 'Poppins', sans-serif
+  color: $tx_c
+  background-color: $bg_c
+  font-size: 1.5em
+  line-height: 1.7em
+  background-image: url('../img/bg.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  background-attachment: fixed
+  background-size: cover
+
+.section-header
+  text-align: center
+  font-weight: 700
+  margin-bottom: 2em
+
+/*-- Top_Navigation_Menu --*/
+.shadow-1
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+.shadow-2
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+
+.navigation-menu
+  position: fixed
+
+.control-btn
+  width: 95%
+  height: 85px
+  position: absolute
+  z-index: 100000000
+
+.menu-btn
+  color: $wh_c !important
+  background: $tx_c
+  padding: 12px 14px 10px 14px
+  border-radius: 2px
+  font-size: 1.5em
+  cursor: pointer
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+  &:hover
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+
+.toggle-btn, .close-btn
+  position: fixed
+  top: 30px
+  left: 30px
+  transition: all 0.3s ease-in-out
+
+.toggle-btn
+  z-index: 1000
+
+.close-btn
+  z-index: 100
+
+.slide-menu
+  position: relative
+  margin-left: 0
+  height: 100vh
+  max-height: 100vh
+  width: 110px
+  overflow: hidden
+  overflow-y: scroll
+  transition: all 0.3s ease-in-out
+  &::-webkit-scrollbar
+    width: 5px
+  &::-webkit-scrollbar-thumb
+    background: #9CCC65
+    border-radius: 20px
+
+.nav-items
+  margin: 0
+  margin-top: 120px
+  margin-left: 30px
+  padding: 0
+  list-style: none
+  li
+    a
+      display: inline-block
+      margin-bottom: 0.7em
+
+.hide-menu
+  margin-left: -120px
+
+.opc-1
+  opacity: 1
+
+/*-- Hero_Section --*/
+#hero
+  min-height: 100vh
+  text-align: center
+  h1
+    font-weight: 700
+    margin: 0
+    padding: 0
+
+/*-- About_Section --*/
+
+#about
+  .container
+    position: relative
+
+.timeline-bar
+  position: absolute
+  left: 49.6%
+  height: 93%
+  border-right: 5px solid $tx_c
+  margin-bottom: 20px
+
+.timeline
+  color: $tx_c
+  min-height: 80vh
+  margin: 20px 0
+  .timeline-container
+    position: relative
+    background: $bgl_c
+    padding: 1em
+    margin: 50px 30px 0 30px
+    text-align: justify
+
+  .timeline-arrow
+    position: absolute
+    left: 100%
+    top: 50%
+    &:after, &:before
+    left: 100%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-event: none
+    &:after
+    border-color: rgba(255, 255, 255, 0)
+    border-left-color: $bgl_c
+    border-width: 12px
+    margin-top: -12px
+    &:before
+    border-color: rgba(0, 0, 0, 0)
+    border-left-color: $bgl_c
+    border-width: 13px
+    margin-top: -13px
+
+.timeline-right .timeline-arrow
+  left: 0
+  &:after
+  border-color: rgba(255, 255, 255, 0)
+  border-right-color: $bgl_c
+  margin-left: -20px
+  &:before
+  border-color: rgba(255, 255, 255, 0)
+  border-right-color: $bgl_c
+  margin-left: -26px
+
+.timeline-circle
+  position: absolute
+  right: -66px
+  top: 39%
+  .fa-code
+    padding: 0.5em
+    border: 1px solid $tx_c
+    border-radius: 50%
+    background: $tx_c
+    color: #fff
+    font-size: 1.5em
+    font-weight: 700
+.timeline-right .timeline-container .timeline-circle
+  left: -73px
+
+/*-- Portfolio_Section --*/
+
+#portfolio
+  margin-top: 5em
+
+.projects
+  position: relative
+  list-style: none
+  overflow: hidden
+  width: 100%
+  padding: 0
+  margin: 0
+  li
+    -webkit-backface-visibility: hidden
+    position: absolute
+    display: none
+    width: 100%
+    left: 0
+    top: 0
+  &:first-child
+    position: relative
+    display: block
+    float: left
+  img
+    display: block
+    height: auto
+    width: 100%
+    border: 0
+
+.callbacks_container
+  margin-bottom: 50px
+  position: relative
+  z-index: 100
+
+
+.callbacks_nav
+  position: absolute
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  top: 60%
+  left: 0
+  opacity: 0.1
+  z-index: 3
+  text-indent: -9999px
+  overflow: hidden
+  text-decoration: none
+  height: 61px
+  width: 38px
+  background: transparent url("../img/themes.gif") no-repeat left top
+  margin-top: -45px
+  &:hover
+    opacity: 0.7
+
+
+.callbacks_nav:active
+  opacity: 1.0
+
+
+.callbacks_nav.next
+  left: auto
+  background-position: right top
+  right: 0
+
+
+/*-- Quotation_Section --*/
+
+p.qm
+  margin: 0
+
+.qm
+  font-size: 5em
+  opacity: 0.5
+
+.quotes
+  position: relative
+  list-style: none
+  overflow: hidden
+  width: 100%
+  padding: 0
+  margin: 0
+  text-align: center
+  li
+    -webkit-backface-visibility: hidden
+    position: absolute
+    display: none
+    width: 100%
+    left: 0
+    top: 0
+    h4
+      font-weight: 700
+
+  &:first-child
+    position: relative
+    display: block
+    float: left
+
+
+/*-- Contact_Section --*/
+#contact
+  padding: 5em 0
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    text-align: center
+    li
+      display: inline
+      a
+        display: inline-block
+        background: $tx_c
+        color: $wh_c !important
+        padding: 1em
+        font-size: 1.7em
+        margin-right: 1em
+      &:last-child
+        a
+          margin-right: 0
+      a.email
+        transform: rotate(45deg)
+        padding: 0
+        .fa-paper-plane
+          background: $tx_c
+          padding: 1em
+          transform: rotate(-45deg)
+
+
+/*-- Footer_Section --*/
+#footer
+  background: $tx_c
+  color: $wh_c
+  text-align: center
+  h3
+    margin: 0
+    padding: 1.2em 0 1em 0
