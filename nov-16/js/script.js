@@ -31,7 +31,7 @@ $("document").ready(function() {
     $(".quotes").responsiveSlides({
         auto: true,
         speed: 500,
-        timeout: 5000,
+        timeout: 10000,
         pause: true,
         pauseControls: true,
     });
@@ -39,7 +39,7 @@ $("document").ready(function() {
     $(".projects").responsiveSlides({
         auto: true,
         pager: false,
-        speed: 1000,
+        speed: 500,
         pause: true,
         pauseControls: true,
         timeout: 5000,
@@ -59,5 +59,7 @@ $("document").ready(function() {
       $('.pop-container').fadeOut();
     });
 
+    window.sr = ScrollReveal({reset: true});
+    sr.reveal('.social', { duration: 1000 }, 100);
 
 });

@@ -237,12 +237,13 @@ body {
 .callbacks_container {
   margin-bottom: 50px;
   position: relative;
+  padding: 0 2em;
   z-index: 100; }
 
 .callbacks_nav {
   position: absolute;
   -webkit-tap-highlight-color: transparent;
-  top: 60%;
+  top: 50%;
   left: 0;
   opacity: 0.1;
   z-index: 3;
@@ -309,6 +310,8 @@ p.qm {
     top: 0; }
     .quotes li h4 {
       font-weight: 700; }
+      .quotes li h4 span {
+        font-size: 0.8em; }
   .quotes:first-child {
     position: relative;
     display: block;
@@ -341,9 +344,9 @@ p.qm {
         #contact ul li a.email .fa-paper-plane {
           background: #689F38;
           padding: 1em;
-          -webkit-transform: rotate(-45deg);
-              -ms-transform: rotate(-45deg);
-                  transform: rotate(-45deg); }
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg); }
 
 .pop-container {
   position: fixed;
