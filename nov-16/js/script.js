@@ -30,15 +30,34 @@ $("document").ready(function() {
     //quotation_slides
     $(".quotes").responsiveSlides({
         auto: true,
-        speed: 7000
+        speed: 500,
+        timeout: 5000,
+        pause: true,
+        pauseControls: true,
     });
 
     $(".projects").responsiveSlides({
         auto: true,
         pager: false,
-        speed:2000,
+        speed: 1000,
+        pause: true,
+        pauseControls: true,
+        timeout: 5000,
         nav: true,
         namespace: "callbacks"
     });
+
+    $('#send-email').click(function(){
+      $('.pop-container').fadeIn();
+    });
+
+    $('#close-window').click(function(){
+      $('.pop-container').fadeOut();
+    });
+
+    $('#pop-bg').click(function(){
+      $('.pop-container').fadeOut();
+    });
+
 
 });

@@ -70,32 +70,35 @@
                         <div class="timeline-container">
                             <div class="timeline-circle"><i class="fa fa-code" aria-hidden="true"></i></div>
                             <div class="timeline-arrow"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad suscipit deserunt fuga aut corporis officia! Vitae molestias, eligendi cum velit necessitatibus dolorem, repellat inventore perferendis, nostrum reiciendis doloremque
-                                quisquam.</p>
+                            <h3 class="small-header">intro</h3>
+                            <p>i live in dhaka, bangladesh. love to design and develop websites. in my passtime i am a blogger, reader, ambigram artist.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-sm-offset-6 timeline-right">
                         <div class="timeline-container">
                             <div class="timeline-circle"><i class="fa fa-code" aria-hidden="true"></i></div>
                             <div class="timeline-arrow"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, accusamus perspiciatis quo repellat tempora corporis fuga, delectus facere nisi enim in iusto inventore veritatis optio debitis deleniti commodi asperiores.
-                                Consequatur.</p>
+                            <h3 class="small-header">web development</h3>
+                            <p>i am a coder first. learnt java as academic requirement, but web technologies attract me most. coding for web for the last two years. mastered html5, css3, javascript and a little php. bootstrap is my favourite front-end framework.
+                                for heavy back-end application laravel is my first choice. if my project is a spa application without any confusion i will choose angularjs. i also love to work with wordpress.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 timeline-left">
                         <div class="timeline-container">
                             <div class="timeline-circle"><i class="fa fa-code" aria-hidden="true"></i></div>
                             <div class="timeline-arrow"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad suscipit deserunt fuga aut corporis officia! Vitae molestias, eligendi cum velit necessitatibus dolorem, repellat inventore perferendis, nostrum reiciendis doloremque
-                                quisquam.</p>
+                            <h3 class="small-header">ui/ux design</h3>
+                            <p>when i am not coding i am a ui/ux designer. i follow the minimalistic ideology, meaning i believe less is more. for spa or mobile app i follow the material design pattern. love to design portfolio site and mobile application
+                                most.
+                            </p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-sm-offset-6 timeline-right">
                         <div class="timeline-container">
                             <div class="timeline-circle"><i class="fa fa-code" aria-hidden="true"></i></div>
                             <div class="timeline-arrow"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, accusamus perspiciatis quo repellat tempora corporis fuga, delectus facere nisi enim in iusto inventore veritatis optio debitis deleniti commodi asperiores.
-                                Consequatur.</p>
+                            <h3 class="small-header">future plan</h3>
+                            <p>mastering nodejs is my next target and goal is to become a full-stack javascript developer. then i will try to convert some of my ideas into electron and ionic applications.</p>
                         </div>
                     </div>
                 </div>
@@ -111,22 +114,20 @@
                 <div class="row callbacks_container">
                     <ul class="projects">
                         <li>
-                            <div class="col-sm-6">
+                            <div class="col-sm-7">
                                 <img src="img/OB-1.jpg" alt="">
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-5 projects-meta">
+                                <h3 class="small-header">rateit.com.bd</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem fugiat explicabo quidem, nobis, ullam laboriosam voluptatibus voluptatem possimus distinctio vero aliquid placeat optio eum laudantium, consequuntur
                                     laborum non fugit facilis.</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="col-sm-6">
-                                <img src="img/OB-1.jpg" alt="">
-                            </div>
-                            <div class="col-sm-6">
-                                <p>ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem fugiat explicabo quidem, nobis, ullam laboriosam voluptatibus voluptatem possimus distinctio vero aliquid placeat optio eum laudantium, consequuntur laborum
-                                    non fugit facilis.</p>
+                                <div class="technologies">
+                                    <h4>laravel</h4>
+                                    <h4>laravel</h4>
+                                    <h4>laravel</h4>
+                                    <h4>laravel</h4>
+                                </div>
+                                <a href="" class="visit-btn">visit site</a>
                             </div>
                         </li>
 
@@ -175,32 +176,72 @@
                 <ul>
                     <li><a href="#" style="padding: 1em 1.2em;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="email"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="email" id="send-email"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
                     <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                     <li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
                 </ul>
-            </div>
-        </div>
-
-
-        <div class="row" id="footer">
-            <footer class="footer">
-                <div class="container">
-                    <h3>made with <i class="fa fa-heart" aria-hidden="true"></i> in the shadow of linux mint </h3>
                 </div>
-            </footer>
+
+                <div class="pop-container">
+                  <div class="pop-bg" id="pop-bg"></div>
+                  <div class="pop-box flex">
+
+                    <span class="pop-close" id="close-window"><i class="fa fa-compress" aria-hidden="true"></i>
+</span>
+
+                    <div class="container">
+
+                      <div class="row">
+
+                        <div class="col-sm-6 col-sm-offset-3">
+
+                          <form class="pop-form">
+
+                              <div class="form-body">
+                                  <div class="form-group">
+                                      <input type="text" class="form-control" id="name" placeholder="Your Name...">
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="email" class="form-control" id="email" placeholder="Your Email...">
+                                  </div>
+                                  <div class="form-group">
+                                      <textarea class="form-control" rows="5" id="message" placeholder="Your Message..."></textarea>
+                                  </div>
+                                  <button type="submit" class="btn btn-default">SEND</button>
+                                </div>
+
+                          </form>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+            </div>
+
+
+            <div class="row" id="footer">
+                <footer class="footer">
+                    <div class="container">
+                        <h3>made with <i class="fa fa-heart" aria-hidden="true"></i> in the shadow of linux mint </h3>
+                    </div>
+                </footer>
+            </div>
+
         </div>
 
-    </div>
 
 
 
-
-    <!-- =javaScript= -->
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
-    <script src="js/script.js"></script>
+        <!-- =javaScript= -->
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/responsiveslides.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>
