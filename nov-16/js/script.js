@@ -59,7 +59,7 @@ $("document").ready(function() {
       $('.pop-container').fadeOut();
     });
 
-    window.sr = ScrollReveal({reset: true});
-    sr.reveal('.social', { duration: 1000 }, 100);
+    window.sr = ScrollReveal();
+    sr.reveal('.social', { duration: 700 }, 100);
 
 });
