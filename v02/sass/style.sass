@@ -1,13 +1,108 @@
 
-/*-- Common_Styles --*/
+@import url('https://fonts.googleapis.com/css?family=Abel|Playfair+Display:400,700')
+
+$bg: #3c3741
+$gr: #799413
+$lg: #cddc39
+$wh: #fffff7
+$or: #FD5B03
+
+/*-- =Common_Styles --*/
 *
   margin: 0
   padding: 0
   box-sizing: border-box
 
-* a
-  text-decoration: none
-  & :hover, :visited, :active
-    text-decoration: none
+* a, * a:visited
+  text-decoration: none !important
+  color: $lg !important
+  transition: all ease-in-out 0.3s
+* a:hover, * a:active
+  text-decoration: none !important
+  color: $or !important
 
-/*-- Top_Navigation_Menu --*/
+.flex
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-content: center
+
+body
+  font-family: 'Playfair Display', serif
+  font-style: normal
+  font-weight: 400
+  background: $bg
+  color: $wh
+  p
+    font-family: 'Abel', sans-serif
+    font-size: 1.5em
+    margin: 0
+    padding: 0
+  .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6
+    margin: 0
+    padding: 0
+
+.box-shadow-1
+  box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5)
+.text-shadow-1
+  text-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5)
+
+.sec-header
+  font-size: 3em
+  font-weight: 700
+  text-align: center
+  text-transform: uppercase
+  letter-spacing: 0.2em
+  opacity: 0.1
+  padding: 1em 0
+
+.colored-container
+  background: $gr
+  height: 100%
+  width: 100%
+  margin-bottom: 3em
+  padding: 1em 0 1.2em 0
+
+/*-- =Top_Navigation_Menu --*/
+.navbar-default
+  background: $bg
+  border: none
+  border-radius: 0
+
+.navbar .navbar-nav
+  display: inline-block
+  float: none
+  vertical-align: top
+  li
+    a
+      text-transform: uppercase
+      color: $lg
+      font-size: 1.3em
+
+.navbar .navbar-collapse
+  text-align: center
+
+/*-- =Hero_Section --*/
+#hero
+  min-height: 100vh
+  text-align: center
+  background-color: $bg
+  background-image: url(../img/BG.jpg)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  background-attachment: fixed
+  h1
+    font-size: 3.5em
+    font-weight: 700
+    color: $wh
+
+
+/*-- =About_Section --*/
+#about
+  min-height: 100vh
+  h3, h4
+    font-weight: 700
+.about-left
+  text-align: right
+/*-- =Hero_Section --*/
