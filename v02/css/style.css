@@ -70,7 +70,7 @@ body {
 
 .btn-full {
   display: block;
-  padding: 0.4em 0;
+  padding: 0.5em 0;
   text-align: center;
   background: #799413;
   font-size: 1.5em;
@@ -151,5 +151,32 @@ body {
   .project a {
     font-size: 2em;
     font-weight: 700; }
+
+.open-source {
+  margin-bottom: 3em; }
+  .open-source .btn-full {
+    padding: 1em 0; }
+
+/*-- =Quotation_Section -- */
+.quote-container {
+  position: relative;
+  padding: 5em 10em; }
+  .quote-container .q-mark {
+    position: absolute;
+    color: #fffff7;
+    font-size: 7em;
+    opacity: 0.1; }
+  .quote-container .q-left {
+    top: -10px;
+    left: 25px; }
+  .quote-container .q-right {
+    bottom: -10px;
+    right: 25px; }
+  .quote-container h4 {
+    font-weight: 700;
+    margin-top: 0.5em; }
+    .quote-container h4 span {
+      font-weight: 400;
+      font-size: 0.8em; }
 
 /*# sourceMappingURL=style.css.map */
