@@ -68,6 +68,15 @@ body {
   margin-bottom: 3em;
   padding: 2em; }
 
+.btn-full {
+  display: block;
+  padding: 0.4em 0;
+  text-align: center;
+  background: #799413;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 700; }
+
 /*-- =Top_Navigation_Menu -- */
 .navbar-default {
   background: #3c3741;
