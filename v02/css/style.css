@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Abel|Playfair+Display:400,700");
+@import url("https://fonts.googleapis.com/css?family=Abel|Shojumaru|Playfair+Display:400,700");
 /*-- =Common_Styles -- */
 * {
   margin: 0;
@@ -7,13 +7,13 @@
 
 * a, * a:visited {
   text-decoration: none !important;
-  color: #cddc39 !important;
+  color: #3498DB !important;
   -webkit-transition: all ease-in-out 0.3s;
           transition: all ease-in-out 0.3s; }
 
 * a:hover, * a:active {
   text-decoration: none !important;
-  color: #FD5B03 !important; }
+  color: #A5E65A !important; }
 
 .flex {
   display: -webkit-box;
@@ -37,7 +37,7 @@ body {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
-  background: #3c3741;
+  background: #112233;
   color: #fffff7; }
   body p {
     font-family: "Abel", sans-serif;
@@ -64,7 +64,7 @@ body {
   padding: 1.5em 0; }
 
 .colored-container {
-  background: #799413;
+  background: #34495E;
   margin-bottom: 3em;
   padding: 2em; }
 
@@ -72,14 +72,14 @@ body {
   display: block;
   padding: 0.5em 0;
   text-align: center;
-  background: #799413;
+  background: #34495E;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: 700; }
 
 /*-- =Top_Navigation_Menu -- */
 .navbar-default {
-  background: #3c3741;
+  background: #112233;
   border: none;
   border-radius: 0; }
 
@@ -89,17 +89,24 @@ body {
   vertical-align: top; }
   .navbar .navbar-nav li a {
     text-transform: uppercase;
-    color: #cddc39;
-    font-size: 1.3em; }
+    color: #3498DB;
+    font-size: 1.3em;
+    font-weight: 700; }
 
 .navbar .navbar-collapse {
   text-align: center; }
+
+#shahid {
+  padding-top: 0.8em;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  font-family: "Shojumaru", cursive; }
 
 /*-- =Hero_Section -- */
 #hero {
   min-height: 100vh;
   text-align: center;
-  background-color: #3c3741;
+  background-color: #112233;
   background-image: url(../img/BG.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -203,7 +210,7 @@ body {
   opacity: 0.5; }
 #contact .send {
   width: 100%;
-  background: #799413;
+  background: #34495E;
   color: #fffff7;
   border-radius: 0;
   padding: 0.5em 0;
@@ -219,7 +226,7 @@ body {
 
 /*-- =Footer_Section -- */
 .footer {
-  background: #3c3741;
+  background: #112233;
   border-top: 1px solid rgba(255, 255, 247, 0.3); }
   .footer p {
     margin: 0;

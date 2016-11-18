@@ -1,14 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css?family=Abel|Playfair+Display:400,700')
+@import url('https://fonts.googleapis.com/css?family=Abel|Shojumaru|Playfair+Display:400,700')
 
-$bg: #3c3741
-$gr: #799413
-$lg: #cddc39
+$bg: #112233
+$bw: #34495E
+$lb: #3498DB
 $wh: #fffff7
-$or: #FD5B03
+$lg: #A5E65A
 $abel: 'Abel', sans-serif
 $playfair: 'Playfair Display', serif
-
+$shojumaru: 'Shojumaru', cursive
 /*-- =Common_Styles --*/
 *
   margin: 0
@@ -17,11 +17,11 @@ $playfair: 'Playfair Display', serif
 
 * a, * a:visited
   text-decoration: none !important
-  color: $lg !important
+  color: $lb !important
   transition: all ease-in-out 0.3s
 * a:hover, * a:active
   text-decoration: none !important
-  color: $or !important
+  color: $lg !important
 
 .flex
   display: flex
@@ -59,7 +59,7 @@ body
   padding: 1.5em 0
 
 .colored-container
-  background: $gr
+  background: $bw
   margin-bottom: 3em
   padding: 2em
 
@@ -67,7 +67,7 @@ body
   display: block
   padding: 0.5em 0
   text-align: center
-  background: $gr
+  background: $bw
   font-size: 1.5em
   text-transform: uppercase
   font-weight: 700
@@ -86,11 +86,18 @@ body
   li
     a
       text-transform: uppercase
-      color: $lg
+      color: $lb
       font-size: 1.3em
+      font-weight: 700
 
 .navbar .navbar-collapse
   text-align: center
+
+#shahid
+  padding-top: 0.8em
+  letter-spacing: 3px
+  font-size: 1.5em
+  font-family: $shojumaru
 
 /*-- =Hero_Section --*/
 #hero
@@ -190,7 +197,7 @@ body
     opacity: 0.5
   .send
     width: 100%
-    background: $gr
+    background: $bw
     color: $wh
     border-radius: 0
     padding: 0.5em 0
