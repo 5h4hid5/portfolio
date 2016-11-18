@@ -6,6 +6,8 @@ $gr: #799413
 $lg: #cddc39
 $wh: #fffff7
 $or: #FD5B03
+$abel: 'Abel', sans-serif
+$playfair: 'Playfair Display', serif
 
 /*-- =Common_Styles --*/
 *
@@ -28,13 +30,13 @@ $or: #FD5B03
   align-content: center
 
 body
-  font-family: 'Playfair Display', serif
+  font-family: $playfair
   font-style: normal
   font-weight: 400
   background: $bg
   color: $wh
   p
-    font-family: 'Abel', sans-serif
+    font-family: $abel
     font-size: 1.5em
     margin: 0
     padding: 0
@@ -171,3 +173,29 @@ body
     span
       font-weight: 400
       font-size: 0.8em
+
+/*-- =Contact_Section --*/
+#contact
+  input, textarea
+    border: none
+    background: none
+    border-radius: 0
+    box-shadow: none
+    color: $wh
+    font-family: $abel
+    font-size: 1.5em
+  ::placeholder
+    color: $wh
+    opacity: 0.5
+  .send
+    width: 100%
+    background: $gr
+    color: $wh
+    border-radius: 0
+    padding: 0.5em 0
+    font-size: 1.5em
+    font-weight: 700
+    letter-spacing: 2px
+    text-transform: uppercase
+    border: none
+    margin-bottom: 3em

@@ -179,4 +179,38 @@ body {
       font-weight: 400;
       font-size: 0.8em; }
 
+/*-- =Contact_Section -- */
+#contact input, #contact textarea {
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fffff7;
+  font-family: "Abel", sans-serif;
+  font-size: 1.5em; }
+#contact ::-webkit-input-placeholder {
+  color: #fffff7;
+  opacity: 0.5; }
+#contact ::-moz-placeholder {
+  color: #fffff7;
+  opacity: 0.5; }
+#contact :-ms-input-placeholder {
+  color: #fffff7;
+  opacity: 0.5; }
+#contact ::placeholder {
+  color: #fffff7;
+  opacity: 0.5; }
+#contact .send {
+  width: 100%;
+  background: #799413;
+  color: #fffff7;
+  border-radius: 0;
+  padding: 0.5em 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 3em; }
+
 /*# sourceMappingURL=style.css.map */
