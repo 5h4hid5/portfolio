@@ -187,7 +187,8 @@ body {
   box-shadow: none;
   color: #fffff7;
   font-family: "Abel", sans-serif;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  border-bottom: 1px solid rgba(255, 255, 247, 0.3); }
 #contact ::-webkit-input-placeholder {
   color: #fffff7;
   opacity: 0.5; }
@@ -212,5 +213,22 @@ body {
   text-transform: uppercase;
   border: none;
   margin-bottom: 3em; }
+
+.social {
+  margin-bottom: 5em; }
+
+/*-- =Footer_Section -- */
+.footer {
+  background: #3c3741;
+  border-top: 1px solid rgba(255, 255, 247, 0.3); }
+  .footer p {
+    margin: 0;
+    padding: 1em 0;
+    color: #fffff7;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
