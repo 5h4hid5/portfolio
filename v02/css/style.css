@@ -143,19 +143,19 @@ body {
   margin-bottom: 2em; }
   .project h2 {
     font-weight: 700;
-    margin-bottom: 0.3em; }
+    margin-bottom: 0.7em; }
   .project ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 0.3em; }
+    margin-bottom: 0.5em; }
     .project ul li {
       display: inline;
       font-weight: 700;
       font-size: 1.5em;
       margin-right: 1em; }
   .project p {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5em;
     text-align: justify; }
   .project a {
     font-size: 2em;
@@ -270,6 +270,9 @@ body {
       left: 15px; }
     .quote-container .q-right {
       bottom: -5px;
-      right: 15px; } }
+      right: 15px; }
+
+  .project p {
+    text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */
