@@ -238,4 +238,36 @@ body {
     font-family: "Playfair Display", serif;
     text-transform: uppercase; }
 
+@media (max-width: 767px) {
+  .sec-header {
+    font-size: 2em; }
+
+  .no-pad-lr {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+  .no-margin-lr {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .about-left, .about-right {
+    text-align: left; }
+
+  .same-height {
+    margin-bottom: 2em; }
+
+  .os-pj {
+    margin-bottom: 2em; }
+
+  .quote-container {
+    padding: 3em 5em; }
+    .quote-container .q-left, .quote-container .q-right {
+      font-size: 4em; }
+    .quote-container .q-left {
+      top: -5px;
+      left: 15px; }
+    .quote-container .q-right {
+      bottom: -5px;
+      right: 15px; } }
+
 /*# sourceMappingURL=style.css.map */
