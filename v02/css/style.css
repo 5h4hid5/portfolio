@@ -275,6 +275,11 @@ body .h1, body h1, body .h2, body h2, body .h3, body h3, body .h4, body h4, body
   text-transform: uppercase;
   border: none;
   margin-bottom: 3em;
+  transition: all ease-in-out 0.3s;
+}
+
+#contact .send:hover {
+  background: #D33257;
 }
 
 .social {
