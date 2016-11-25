@@ -281,6 +281,26 @@ body .h1, body h1, body .h2, body h2, body .h3, body h3, body .h4, body h4, body
   margin-bottom: 5em;
 }
 
+.fb:hover {
+  color: #fffff7 !important;
+  background: #46629E;
+}
+
+.tt:hover {
+  color: #fffff7 !important;
+  background: #1DA1F2;
+}
+
+.gh:hover {
+  color: #fffff7 !important;
+  background: #333333;
+}
+
+.cp:hover {
+  color: #fffff7 !important;
+  background: #000000;
+}
+
 /*-- =Footer_Section --*/
 .footer {
   background: #112233;
