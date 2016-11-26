@@ -1,364 +1,262 @@
-@import url("https://fonts.googleapis.com/css?family=Abel|Shojumaru|Playfair+Display:400,700");
-/*-- =Common_Styles --*/
+/*=============================================
+  ____  _____ _______        _     _
+ |  _ \|  __ \__   __|      | |   (_)
+ | |_) | |  | | | | ___  ___| |__  _  ___  ___
+ |  _ <| |  | | | |/ _ \/ __| '_ \| |/ _ \/ __|
+ | |_) | |__| | | |  __/ (__| | | | |  __/\__ \
+ |____/|_____/  |_|\___|\___|_| |_|_|\___||___/
+
+ !------- We Convert IDEAS into REALITY ------!
+
+ =============================================*/
+
+@import 'https://fonts.googleapis.com/css?family=Arima+Madurai|Bungee+Inline';
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-* a, * a:visited {
-  text-decoration: none !important;
-  border: none !important;
-  outline: none !important;
-  color: #3498DB !important;
-  transition: all ease-in-out 0.3s;
+* a {
+    color: #3D8EB9;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 
-* a:hover, * a:active {
-  text-decoration: none !important;
-  color: #A5E65A !important;
+* a:hover,
+* a:active,
+* a:focus,
+* a:visited
+{
+    color: #71BA51;
+    text-decoration: none;
 }
 
 .flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
 }
 
 body {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 400;
-  background: #112233;
-  color: #fffff7;
+    color: #E7E7E7;
+    background: #3C3741;
+    font-size: 1.5em;
+    font-style: normal;
+    font-family: 'Arima Madurai', cursive;
 }
 
-body p {
-  font-family: "Abel", sans-serif;
-  font-size: 1.5em;
-  margin: 0;
-  padding: 0;
+.form-group textarea:focus,
+.form-group input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    box-shadow: none;
+  outline: 0 none;
 }
 
-body .h1, body h1, body .h2, body h2, body .h3, body h3, body .h4, body h4, body .h5, body h5, body .h6, body h6 {
-  margin: 0;
-  padding: 0;
-}
 
-.box-shadow-1 {
-  box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
-}
+/*
+=navigation-menu
+==============*/
 
-.text-shadow-1 {
-  text-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
-}
-
-.sec-header {
-  font-size: 3em;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  opacity: 0.1;
-  padding: 1.5em 0;
-}
-
-.colored-container {
-  background: #34495E;
-  margin-bottom: 3em;
-  padding: 2em;
-}
-
-.btn-full {
-  display: block;
-  padding: 0.5em 0;
-  text-align: center;
-  background: #34495E;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-/*-- =Top_Navigation_Menu --*/
 .navbar-default {
-  background: #112233;
-  border: none;
-  border-radius: 0;
+    background: #3C3741;
+    border: none;
+    border-bottom: 1px dashed rgba(231,231,231,0.1);
 }
 
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+.navbar-default .navbar-brand {
+    font-family: 'Bungee Inline', cursive;
 }
 
-.navbar .navbar-nav li a {
-  text-transform: uppercase;
-  color: #3498DB;
-  font-size: 1.3em;
-  font-weight: 700;
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    color: #E7E7E7;
 }
 
-.navbar .navbar-collapse {
-  text-align: center;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #71BA51;
 }
 
-#shahid {
-  padding-top: 0.8em;
-  letter-spacing: 3px;
-  font-size: 1.5em;
-  font-family: "Shojumaru", cursive;
-  color: #A5E65A !important;
+/*
+=landing
+======*/
+.landing {
+    min-height: 90vh;
+    text-align: center;
 }
 
-#shahid:hover {
-  color: #D33257 !important;
+.landing img {
+    margin: 0 auto;
+    max-width: 120px;
 }
 
-/*-- =Hero_Section --*/
-#hero {
-  min-height: 100vh;
-  text-align: center;
-  background-color: #112233;
-  background-image: url(../img/BG.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+.skills {
+    padding: 1em 0 2em 0;
+    color: #3C3741;
+    border-top: 1px dashed rgba(60,55,65, 0.5);
+    text-align: center;
+    background: #E7E7E7;
 }
 
-#hero h1 {
-  font-size: 3.5em;
-  font-weight: 700;
-  color: #fffff7;
+.skills p {
+    margin: 2em 0 0 0;
 }
 
-/*-- =About_Section --*/
-#about {
-  min-height: 100vh;
+.skills .devicon {
+    font-size: 6em;
 }
 
-#about h3, #about h4 {
-  font-weight: 700;
+.skills .fa,
+.skills .devicon {
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
 }
 
-#about h3 {
-  margin-bottom: 1em;
+.skills .fa-heart:hover {
+    color: #C82647;
 }
 
-#about h4 {
-  margin-bottom: 0.3em;
+.skills .devicon-html5-plain:hover {
+    color: #E44D26;
 }
 
-.about-left {
-  text-align: right;
+.skills .devicon-css3-plain:hover {
+    color: #1572B6;
 }
 
-.about-right {
-  text-align: left;
+.skills .devicon-javascript-plain:hover {
+    color: #F0DB4F;
 }
 
-.single-skill {
-  margin-bottom: 1em;
+.skills .devicon-php-plain:hover {
+    color: #6181B6;
 }
 
-/*-- =Portfolio_Section --*/
-.project {
-  margin-bottom: 2em;
+.skills .devicon-java-plain:hover {
+    color: #EA2D2E;
 }
 
-.project h2 {
-  font-weight: 700;
-  margin-bottom: 0.7em;
+.skills .devicon-bootstrap-plain:hover {
+    color: #5B4282;
 }
 
-.project ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 0.5em;
+.skills .devicon-laravel-plain:hover {
+    color: #FD4F31;
 }
 
-.project ul li {
-  display: inline;
-  font-weight: 700;
-  font-size: 1.5em;
-  margin-right: 1em;
+.skills .devicon-wordpress-plain:hover {
+    color: #494949;
 }
 
-.project p {
-  margin-bottom: 0.5em;
-  text-align: justify;
+#contact {
+    padding: 1em 0;
+    border-top: 1px dashed rgba(231,231,231, 0.5);
 }
 
-.project a {
-  font-size: 2em;
-  font-weight: 700;
+.form-group input,
+.form-group textarea
+{
+    color: #E7E7E7;
+    border: none;
+    padding: 0.6em;
+    font-size: 1.2em;
+    border-radius: 0;
+    background: none;
+    border: 2px solid rgba(231,231,231,0.5);
 }
 
-.project:last-child {
-  margin-bottom: 0;
+form .btn {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    font-size: 1.2em;
+    background: rgba(231,231,231,0.5);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
 }
 
-.project:last-child .colored-container {
-  margin-bottom: 0;
-}
-
-.open-source {
-  margin-bottom: 3em;
-}
-
-.open-source .btn-full {
-  padding: 1em 0;
-}
-
-/*-- =Quotation_Section --*/
-.quote-container {
-  position: relative;
-  padding: 5em 10em;
-}
-
-.quote-container .q-mark {
-  position: absolute;
-  color: #fffff7;
-  font-size: 7em;
-  opacity: 0.1;
-}
-
-.quote-container .q-left {
-  top: -10px;
-  left: 25px;
-}
-
-.quote-container .q-right {
-  bottom: -10px;
-  right: 25px;
-}
-
-.quote-container h4 {
-  font-weight: 700;
-  margin-top: 0.5em;
-}
-
-.quote-container h4 span {
-  font-weight: 400;
-  font-size: 0.8em;
-}
-
-/*-- =Contact_Section --*/
-#contact input, #contact textarea {
-  border: none;
-  background: none;
-  border-radius: 0;
-  box-shadow: none;
-  color: #fffff7;
-  font-family: "Abel", sans-serif;
-  font-size: 1.5em;
-  border-bottom: 1px solid rgba(255, 255, 247, 0.3);
-}
-
-#contact ::placeholder {
-  color: #fffff7;
-  opacity: 0.5;
-}
-
-#contact .send {
-  width: 100%;
-  background: #34495E;
-  color: #fffff7;
-  border-radius: 0;
-  padding: 0.5em 0;
-  font-size: 1.5em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  border: none;
-  margin-bottom: 3em;
-  transition: all ease-in-out 0.3s;
-}
-
-#contact .send:hover {
-  color: #D33257;
+.form .btn:hover {
+    background: #E7E7E7;
 }
 
 .social {
-  margin-bottom: 5em;
+    margin-top: 1.5em;
+    padding: 1em 0;
+    background: #E7E7E7;    
+    color: #3C3741;
+    border-top: 1px dashed rgba(60,55,65, 0.5);
+    border-bottom: 1px dashed rgba(60,55,65, 0.5);
 }
 
-.fb:hover {
-  color: #fffff7 !important;
-  background: #46629E;
+.social-link {
+    text-align: center;
+    font-size: 3em;
 }
 
-.tt:hover {
-  color: #fffff7 !important;
-  background: #1DA1F2;
+.social-link .fa {
+    color: #3C3741;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
 }
 
-.gh:hover {
-  color: #fffff7 !important;
-  background: #333333;
+.social-link .fa-facebook:hover {
+    color: #46629E;
 }
 
-.cp:hover {
-  color: #fffff7 !important;
-  background: #000000;
+.social-link .fa-twitter:hover {
+    color: #1DA1F2;
 }
 
-/*-- =Footer_Section --*/
-.footer {
-  background: #112233;
-  border-top: 1px solid rgba(255, 255, 247, 0.3);
+.social-link .fa-github:hover {
+    color: #191919;
+}
+
+.social-link .fa-codepen:hover {
+    color: #191919;
 }
 
 .footer p {
-  margin: 0;
-  padding: 1em 0;
-  color: #fffff7;
-  font-size: 1em;
-  letter-spacing: 2px;
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
 }
 
-@media (max-width: 767px) {
-  .sec-header {
-    font-size: 2em;
-  }
-  .no-pad-lr {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  .no-margin-lr {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .about-left, .about-right {
-    text-align: left;
-  }
-  .same-height {
-    margin-bottom: 2em;
-  }
-  .os-pj {
-    margin-bottom: 2em;
-  }
-  .quote-container {
-    padding: 3em 5em;
-  }
-  .quote-container .q-left, .quote-container .q-right {
-    font-size: 4em;
-  }
-  .quote-container .q-left {
-    top: -5px;
-    left: 15px;
-  }
-  .quote-container .q-right {
-    bottom: -5px;
-    right: 15px;
-  }
-  .project p {
-    text-align: left;
-  }
+
+/*
+=mobile-friendly
+==============*/
+@media(max-width:767px){
+    .navbar-default .navbar-toggle {
+        border: none;
+        border-radius: 0;
+    }
+    
+    .navbar-default .navbar-toggle:hover {
+        background: none;
+    }
 }
