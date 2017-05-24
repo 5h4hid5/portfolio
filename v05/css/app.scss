@@ -4,7 +4,7 @@
 */
 $bg_Color: #060407;
 $txt_Color: #EEEEEE;
-$primary_Border: 2px solid #6e911b;
+$primary_Border: 1px solid #121212;
 $primary_Transition: all ease-in-out 0.3s;
 /*
 =common
@@ -59,7 +59,41 @@ body {
 
   .back {
     opacity: 0;
-    background: #091323;
+    background: #79A80D;
+    text-align: center;
+
+    .centerer {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    .centered {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      font-size: 2em;
+      color: #FFF;
+    }
+  }
+
+  .facebook {
+    background: #3b5998;
+  }
+  .twitter {
+    background: #00b6f1;
+  }
+  .github {
+    background: #333333;
+  }
+  .behance {
+    background: #1769ff;
+  }
+  .email {
+    background: #ea4335;
   }
 
   &:hover {
@@ -67,5 +101,22 @@ body {
       opacity: 1;
 
     }
+  }
+}
+
+.secFour {
+  height: 200px;
+  .front, .back {
+    height: 200px;
+  }
+}
+
+.secFive {
+  border: $primary_Border;
+  padding: 1em 2em;
+  width: 100%;
+  p {
+    padding: 0;
+    margin: 0;
   }
 }

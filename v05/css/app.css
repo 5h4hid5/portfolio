@@ -23,7 +23,7 @@ body {
   font-size: 16px;
   background: #060407;
   color: #EEEEEE;
-  border: 2px solid #6e911b;
+  border: 1px solid #121212;
 }
 
 .secOne, .secTwo, .secThree {
@@ -33,7 +33,6 @@ body {
 .secContainer {
   position: relative;
 }
-
 .secContainer .front, .secContainer .back {
   position: absolute;
   top: 0;
@@ -41,23 +40,68 @@ body {
   width: 100%;
   height: 350px;
   padding: 2em;
-  border: 2px solid #6e911b;
+  border: 1px solid #121212;
   transition: all ease-in-out 0.3s;
 }
-
 .secContainer .front img, .secContainer .back img {
   height: 100px;
 }
-
 .secContainer .front {
   background: #060407;
 }
-
 .secContainer .back {
   opacity: 0;
-  background: #091323;
+  background: #79A80D;
+  text-align: center;
 }
-
+.secContainer .back .centerer {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.secContainer .back .centered {
+  display: inline-block;
+  vertical-align: middle;
+}
+.secContainer .back a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+  color: #FFF;
+}
+.secContainer .facebook {
+  background: #3b5998;
+}
+.secContainer .twitter {
+  background: #00b6f1;
+}
+.secContainer .github {
+  background: #333333;
+}
+.secContainer .behance {
+  background: #1769ff;
+}
+.secContainer .email {
+  background: #ea4335;
+}
 .secContainer:hover .back {
   opacity: 1;
+}
+
+.secFour {
+  height: 200px;
+}
+.secFour .front, .secFour .back {
+  height: 200px;
+}
+
+.secFive {
+  border: 1px solid #121212;
+  padding: 1em 2em;
+  width: 100%;
+}
+.secFive p {
+  padding: 0;
+  margin: 0;
 }
