@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Amaranth");
+/*
+=variables
+*/
+/*
+=common
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 16px;
+  background: #060407;
+  color: #EEEEEE;
+  border: 2px solid #6e911b;
+}
+
+.secOne, .secTwo, .secThree {
+  height: 350px;
+}
+
+.secContainer {
+  position: relative;
+}
+
+.secContainer .front, .secContainer .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  padding: 2em;
+  border: 2px solid #6e911b;
+  transition: all ease-in-out 0.3s;
+}
+
+.secContainer .front img, .secContainer .back img {
+  height: 100px;
+}
+
+.secContainer .front {
+  background: #060407;
+}
+
+.secContainer .back {
+  opacity: 0;
+  background: #091323;
+}
+
+.secContainer:hover .back {
+  opacity: 1;
+}
