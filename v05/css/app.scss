@@ -48,7 +48,7 @@ body {
     transition: $primary_Transition;
 
     img {
-      height: 100px;
+      height: 150px;
     }
 
   }
@@ -78,6 +78,12 @@ body {
       font-size: 1.2em;
       color: #FFF;
     }
+  }
+
+  .about {
+    padding: 2em 5em;
+    text-transform: lowercase;
+    font-size: 1.3em;
   }
 
   .facebook {
@@ -122,5 +128,10 @@ body {
 }
 
 @media (max-width: 767px) {
-
+  .secContainer {
+    .about {
+      padding: 2em;
+      font-size: 1em;
+    }
+  }
 }
