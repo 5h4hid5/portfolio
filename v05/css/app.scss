@@ -4,7 +4,7 @@
 */
 $bg_Color: #060407;
 $txt_Color: #EEEEEE;
-$primary_Border: 1px solid #121212;
+$primary_Border: 1px solid #ada8b6;
 $primary_Transition: all ease-in-out 0.3s;
 /*
 =common
@@ -75,7 +75,7 @@ body {
       display: inline-block;
       width: 100%;
       height: 100%;
-      font-size: 2em;
+      font-size: 1.2em;
       color: #FFF;
     }
   }
@@ -119,4 +119,8 @@ body {
     padding: 0;
     margin: 0;
   }
+}
+
+@media (max-width: 767px) {
+
 }
