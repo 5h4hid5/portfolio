@@ -27,7 +27,7 @@ body {
 }
 
 .secOne, .secTwo, .secThree {
-  height: 350px;
+  height: 400px;
 }
 
 .secContainer {
@@ -39,7 +39,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 350px;
+  height: 400px;
   padding: 2em;
   border: 1px solid #ada8b6;
   transition: all ease-in-out 0.3s;
@@ -55,7 +55,7 @@ body {
 
 .secContainer .back {
   opacity: 0;
-  background: #79A80D;
+  background-color: #79A80D;
   text-align: center;
 }
 
@@ -68,6 +68,9 @@ body {
 .secContainer .back .centered {
   display: inline-block;
   vertical-align: middle;
+  padding: .5em 1em;
+  border: 2px solid #79A80D;
+  background: #060407;
 }
 
 .secContainer .back a {
@@ -75,13 +78,19 @@ body {
   width: 100%;
   height: 100%;
   font-size: 1.2em;
-  color: #FFF;
+  color: #EEEEEE;
 }
 
 .secContainer .about {
   padding: 2em 5em;
   text-transform: lowercase;
   font-size: 1.3em;
+}
+
+.secContainer .facebook .centered, .secContainer .twitter .centered, .secContainer .github .centered, .secContainer .behance .centered, .secContainer .email .centered {
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 .secContainer .facebook {
@@ -125,6 +134,33 @@ body {
 .secFive p {
   padding: 0;
   margin: 0;
+}
+
+.webDes, .webDev, .logoDes, .typography, .blogging {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.webDes {
+  background: url(../img/webdesign.jpg);
+}
+
+.webDev {
+  background: url(../img/webdev.jpg);
+}
+
+.logoDes {
+  background: url(../img/logodesign.jpg);
+}
+
+.typography {
+  background: url(../img/typography.jpg);
+}
+
+.blogging {
+  background: url(../img/blogging.jpg);
 }
 
 @media (max-width: 767px) {
